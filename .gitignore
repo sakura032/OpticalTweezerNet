@@ -1,0 +1,18 @@
+# 彻底忽略 logs 文件夹及其内容
+/logs/
+
+# 忽略这些文件夹下的所有文件
+/data/*
+/output/*
+/scripts/*
+/TweezerNet/EV/*
+
+# 但是，为了让这些文件夹能上传到 GitHub（Git 默认不上传空文件夹），
+# 我们要排除掉对 .gitkeep 文件的忽略（稍后我们会创建它）
+!/data/.gitkeep
+!/output/.gitkeep
+!/scripts/.gitkeep
+!/TweezerNet/EV/.gitkeep
+
+# 忽略根目录下的所有 CSV 文件（看你截图中有很多 CSV）
+/*.csv

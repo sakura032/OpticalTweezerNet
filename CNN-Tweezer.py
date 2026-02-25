@@ -14,7 +14,7 @@ import pandas as pd
 import os
 
 # Set default decvice: GPU
-os.environ['CUDA_VISIBLE_DEVICES'] = '2'
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
 ###############################################################################
 def conv_model(input_shape, output_shape, dropout_rate, learning_rate):
